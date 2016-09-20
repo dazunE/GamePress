@@ -1,59 +1,20 @@
-// ==========
-// VENDOR LIBRARIES
-// ==========
 
-@import "lib/lib";
+/*
+Theme Name: Gamifipress
+Theme URI: https://919press.com/Gamifipress
+Author: 919press
+Author URI: https://919press.com/
+Description: Gamifipress is WordPress theme foundation that built to support gamification platform that built on myCred , WP-REST API , SAP
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
 
-// ==========
-// MIXINS & FUNCTIONS
-// ==========
+// Bootstrap
+@import "bootstrap";
 
-@import "helpers/mixins";
-@import "helpers/functions";
-
-// ==========
-// VARIABLES
-// ==========
-
-@import "variables/susy";
-@import "variables/colors";
-@import "variables/themes";
-@import "variables/typography";
-
-// ==========
-// THEME RESET & BASE FILES
-// ==========
-
-@import "base/reset";
-@import "base/extends";
-@import "base/typography";
-
-// ==========
-// LAYOUTS - All Susy and other span related layouts go here
-// ==========
-@import "layouts/layouts";
-
-// ==========
-// MODULES STYLES
-// ==========
-
-@import "modules/header";
-@import "modules/navigation";
-@import "modules/footer";
-// ... your modules here
-
-
-// ==========
-// PAGE SPECIFIC STYLES
-// ==========
-
-// @import "pages/home";
-// @import "pages/contact";
-
-// ... your page here
-
-// ==========
-// SHAME - For new style snippets that haven't been sorted and commented yet
-// ==========
-
+//Theme Styles
 @import "shame";
+
+
+

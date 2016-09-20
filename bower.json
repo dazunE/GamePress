@@ -17,5 +17,11 @@
     "hmps-animate-scss": "~1.0.1",
     "vertical-rhythms-without-compass": "~1.0.0",
     "susy": "~2.2.3"
-  }
+  },
+  "authors": [
+    "Pulathisi Basnayake <pulathisi.basnayake@gmail.com>"
+  ],
+  "main": "",
+  "license": "MIT",
+  "homepage": ""
 }
