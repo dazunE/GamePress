@@ -18,19 +18,34 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="hfeed site">
-	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'gamepress' ); ?></a>
-
-	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php _e( 'Primary Menu', 'gamepress' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
-
-	<div id="content" class="site-content">
+<nav class="navbar navbar-light bg-faded">
+	<a class="navbar-brand" href="#">{4:Navbar}</a>
+	<ul class="nav navbar-nav">
+		<li class="nav-item active">
+			<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">Home</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">Home</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">Home</a>
+		</li>
+	</ul>
+	<form class="form-inline navbar-form pull-right">
+		<input class="form-control" type="text" placeholder="Search">
+		<button class="btn btn-success-outline" type="submit">Search</button>
+	</form>
+</nav>
+<aside class="main-navigation">
+	<ul>
+		<li><a href=""><span><i class="fa"></i>Nav Item</span></a></li>
+		<li><a href=""><span><i class="fa"></i>Nav Item</span></a></li>
+		<li><a href=""><span><i class="fa"></i>Nav Item</span></a></li>
+		<li><a href=""><span><i class="fa"></i>Nav Item</span></a></li>
+		<li><a href=""><span><i class="fa"></i>Nav Item</span></a></li>
+		<li><a href=""><span><i class="fa"></i>Nav Item</span></a></li>
+	</ul>
+</aside>
