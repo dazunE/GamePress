@@ -100,6 +100,11 @@ add_action( 'widgets_init', 'gamepress_widgets_init' );
  * Enqueue scripts and styles.
  */
 function gamepress_scripts() {
+
+	wp_register_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Maven+Pro:400,500');
+
+	wp_enqueue_style('google-fonts');
+
 	wp_enqueue_style( 'gamepress-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'gamepress-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
