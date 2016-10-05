@@ -182,7 +182,7 @@ aside > ul {
 	.panel {
   max-width: 360px;
   background: #fff;
-  box-shadow: 0 -8px 0 -2px rgba(255, 255, 255, 0.7), 0 2px 5px rgba(0, 0, 0, 0.15);
+  // box-shadow: 0 -8px 0 -2px rgba(255, 255, 255, 0.7), 0 2px 5px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
   color: #666;
   margin: auto;
@@ -210,16 +210,16 @@ aside > ul {
   padding-left: 35px;
   width: 100%;
   font-weight: 200;
-  color: #ED2553;
+  color: #ffffff;
 }
 .panel a {
   text-decoration: none;
-  color: #999;
+  color: #fff;
   display: inline-block;
-  margin-top: 35px;
+  // margin-top: 35px;
 }
 .panel a:hover {
-  color: #ED2553;
+  color: #fff;
   text-decoration: underline;
 }
 
@@ -228,7 +228,7 @@ aside > ul {
   padding: 12px 8px;
   width: 100%;
   margin-top: 15px;
-  background: #fff;
+  background: #6767ff;
   font-size: 18px;
   font-weight: 400;
   cursor: pointer;
@@ -240,12 +240,12 @@ aside > ul {
 .btn:hover {
   color: #fff;
   border-color: #fff;
-  box-shadow: 0 -100px 0 0 #ED2553 inset;
+  box-shadow: 0 -100px 0 0 #4545ff inset;
 }
 
 .register-form {
   color: #fff;
-  background: #ED2553;
+  background: #fddc53;
   font-weight: 100;
   width: 72px;
   height: 72px;
@@ -256,26 +256,24 @@ aside > ul {
   display: inline-block;
   cursor: pointer;
   left: 320px;
-  top: 30px;
+  bottom: 30px;
   position: absolute;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 .register-form .close {
   -webkit-transition: 0.3s;
-  transition: 0.3s;
-  position: absolute;
-  top: 8px;
-  width: 50px;
-  height: 50px;
-  z-index: 2;
-  right: 10px;
-  font-size: 50px;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+    transition: 0.3s;
+    position: absolute;
+    top: 20px;
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+    right: 10px;
+    font-size: 30px;
 }
 .register-form .formset, .register-form h2 {
-  color: #fff;
+  color: #6767ff;
   opacity: 0;
   position: relative;
   -webkit-transform: translateX(30px);
@@ -287,20 +285,20 @@ aside > ul {
   transform: translateY(30px);
 }
 .register-form .btn {
-  color: #ED2553;
+  color: #fff;
   border-color: #fff;
 }
 .register-form .btn:hover {
   color: #fff;
 }
 .register-form .form-group .form-label, .register-form .form-group .form-control {
-  color: #fff;
+  color: #6767ff;
 }
 .register-form .form-group.focus:after {
   background: #fff;
 }
 .register-form .form-group.focus .form-label, .register-form .form-group.filled .form-label {
-  color: #fff;
+  color: #6767ff;
 }
 .register-form.open {
   width: 100%;
@@ -326,8 +324,8 @@ aside > ul {
   opacity: .7;
   cursor: pointer;
   z-index: 2;
-  -webkit-transform: rotate(0deg);
-  transform: rotate(0deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 .register-form.open .close:hover {
   opacity: 1;
@@ -356,25 +354,31 @@ aside > ul {
   margin: auto;
 }
 
+.formset .forgot-password {
+	bottom: 65px;
+    left: 120px;
+    position: absolute;
+}
+
 .form-group {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #6767ff;
   position: relative;
   margin-bottom: 25px;
 }
-.form-group:after {
-  content: '';
-  position: absolute;
-  height: 2px;
-  background: #ED2553;
-  width: 0px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  bottom: -2px;
-  opacity: 0;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
+// .form-group:after {
+//   content: '';
+//   position: absolute;
+//   height: 2px;
+//   background: #ED2553;
+//   width: 0px;
+//   left: 0;
+//   right: 0;
+//   margin: auto;
+//   bottom: -2px;
+//   opacity: 0;
+//   -webkit-transition: 0.3s;
+//   transition: 0.3s;
+// }
 .form-group .form-control {
   border: none;
   height: 35px;
@@ -382,8 +386,9 @@ aside > ul {
   z-index: 2;
   padding: 5px;
   background: none;
-  color: #ED2553;
+  color: #fff;
   width: 100%;
+  font-size: 18px;
 }
 .form-group .form-control:focus, .form-group .form-control:active {
   box-shadow: none;
@@ -391,7 +396,7 @@ aside > ul {
 }
 .form-group .form-label {
   font-weight: 300;
-  color: #bbb;
+  color: #fff;
   font-size: 14px;
   min-height: 17px;
   text-align: left;
@@ -406,12 +411,12 @@ aside > ul {
 .form-group.focus:after {
   opacity: 1;
   width: 100%;
-  background: #ED2553;
+  background: #fff;
 }
 .form-group.focus .form-label, .form-group.filled .form-label {
   top: -7px;
   font-size: 10px;
-  color: #ED2553;
+  color: #fff;
 }
 
 }

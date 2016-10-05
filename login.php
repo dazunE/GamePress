@@ -47,9 +47,10 @@
       <lable class="form-label">Password</lable>
       <input type="password" class="form-control"/>
     </div>
-    <button class="btn">Log in</button><!-- <a href= <?php echo get_template_directory_uri() . '/forgot-password' ?> >Forgot Your Password ?</a> -->
+    <button class="btn"><a href= <?php echo get_template_directory_uri() . '/dashboard' ?> >Log In</a></button>
+    <a class="forgot-password" href="">Forgot Password ?</a>
   </div>
-  <form class="register-form"><i class="close glyphicons glyphicons-question-sign"></i>
+  <form class="register-form"><i class="close fa fa-arrow-right" aria-hidden="true"></i>
     <h2>Forgot Password</h2>
     <div class="formset">
       <!-- <div class="form-group">

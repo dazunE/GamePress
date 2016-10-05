@@ -5960,7 +5960,6 @@ aside > ul {
   .page-template-login .panel, .page-template-forgotPassword .panel {
     max-width: 360px;
     background: #fff;
-    box-shadow: 0 -8px 0 -2px rgba(255, 255, 255, 0.7), 0 2px 5px rgba(0, 0, 0, 0.15);
     border-radius: 8px;
     color: #666;
     margin: auto;
@@ -5993,21 +5992,20 @@ aside > ul {
     padding-left: 35px;
     width: 100%;
     font-weight: 200;
-    color: #ED2553; }
+    color: #ffffff; }
   .page-template-login .panel a, .page-template-forgotPassword .panel a {
     text-decoration: none;
-    color: #999;
-    display: inline-block;
-    margin-top: 35px; }
+    color: #fff;
+    display: inline-block; }
   .page-template-login .panel a:hover, .page-template-forgotPassword .panel a:hover {
-    color: #ED2553;
+    color: #fff;
     text-decoration: underline; }
   .page-template-login .btn, .page-template-forgotPassword .btn {
     border: 1px solid #ccc;
     padding: 12px 8px;
     width: 100%;
     margin-top: 15px;
-    background: #fff;
+    background: #6767ff;
     font-size: 18px;
     font-weight: 400;
     cursor: pointer;
@@ -6018,10 +6016,10 @@ aside > ul {
   .page-template-login .btn:hover, .page-template-forgotPassword .btn:hover {
     color: #fff;
     border-color: #fff;
-    box-shadow: 0 -100px 0 0 #ED2553 inset; }
+    box-shadow: 0 -100px 0 0 #4545ff inset; }
   .page-template-login .register-form, .page-template-forgotPassword .register-form {
     color: #fff;
-    background: #ED2553;
+    background: #fddc53;
     font-weight: 100;
     width: 72px;
     height: 72px;
@@ -6032,7 +6030,7 @@ aside > ul {
     display: inline-block;
     cursor: pointer;
     left: 320px;
-    top: 30px;
+    bottom: 30px;
     position: absolute;
     -webkit-transition: 0.3s;
     transition: 0.3s; }
@@ -6040,16 +6038,14 @@ aside > ul {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     position: absolute;
-    top: 8px;
+    top: 20px;
     width: 50px;
     height: 50px;
     z-index: 2;
     right: 10px;
-    font-size: 50px;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg); }
+    font-size: 30px; }
   .page-template-login .register-form .formset, .page-template-login .register-form h2, .page-template-forgotPassword .register-form .formset, .page-template-forgotPassword .register-form h2 {
-    color: #fff;
+    color: #6767ff;
     opacity: 0;
     position: relative;
     -webkit-transform: translateX(30px);
@@ -6059,16 +6055,16 @@ aside > ul {
     -webkit-transform: translateY(30px);
     transform: translateY(30px); }
   .page-template-login .register-form .btn, .page-template-forgotPassword .register-form .btn {
-    color: #ED2553;
+    color: #fff;
     border-color: #fff; }
   .page-template-login .register-form .btn:hover, .page-template-forgotPassword .register-form .btn:hover {
     color: #fff; }
   .page-template-login .register-form .form-group .form-label, .page-template-login .register-form .form-group .form-control, .page-template-forgotPassword .register-form .form-group .form-label, .page-template-forgotPassword .register-form .form-group .form-control {
-    color: #fff; }
+    color: #6767ff; }
   .page-template-login .register-form .form-group.focus:after, .page-template-forgotPassword .register-form .form-group.focus:after {
     background: #fff; }
   .page-template-login .register-form .form-group.focus .form-label, .page-template-login .register-form .form-group.filled .form-label, .page-template-forgotPassword .register-form .form-group.focus .form-label, .page-template-forgotPassword .register-form .form-group.filled .form-label {
-    color: #fff; }
+    color: #6767ff; }
   .page-template-login .register-form.open, .page-template-forgotPassword .register-form.open {
     width: 100%;
     height: 100%;
@@ -6092,8 +6088,8 @@ aside > ul {
     opacity: .7;
     cursor: pointer;
     z-index: 2;
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg); }
   .page-template-login .register-form.open .close:hover, .page-template-forgotPassword .register-form.open .close:hover {
     opacity: 1; }
   .page-template-login .register-form.open .caption, .page-template-forgotPassword .register-form.open .caption {
@@ -6115,23 +6111,14 @@ aside > ul {
     padding: 25px;
     max-width: 320px;
     margin: auto; }
+  .page-template-login .formset .forgot-password, .page-template-forgotPassword .formset .forgot-password {
+    bottom: 65px;
+    left: 120px;
+    position: absolute; }
   .page-template-login .form-group, .page-template-forgotPassword .form-group {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #6767ff;
     position: relative;
     margin-bottom: 25px; }
-  .page-template-login .form-group:after, .page-template-forgotPassword .form-group:after {
-    content: '';
-    position: absolute;
-    height: 2px;
-    background: #ED2553;
-    width: 0px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    bottom: -2px;
-    opacity: 0;
-    -webkit-transition: 0.3s;
-    transition: 0.3s; }
   .page-template-login .form-group .form-control, .page-template-forgotPassword .form-group .form-control {
     border: none;
     height: 35px;
@@ -6139,14 +6126,15 @@ aside > ul {
     z-index: 2;
     padding: 5px;
     background: none;
-    color: #ED2553;
-    width: 100%; }
+    color: #fff;
+    width: 100%;
+    font-size: 18px; }
   .page-template-login .form-group .form-control:focus, .page-template-login .form-group .form-control:active, .page-template-forgotPassword .form-group .form-control:focus, .page-template-forgotPassword .form-group .form-control:active {
     box-shadow: none;
     outline: none; }
   .page-template-login .form-group .form-label, .page-template-forgotPassword .form-group .form-label {
     font-weight: 300;
-    color: #bbb;
+    color: #fff;
     font-size: 14px;
     min-height: 17px;
     text-align: left;
@@ -6160,11 +6148,11 @@ aside > ul {
   .page-template-login .form-group.focus:after, .page-template-forgotPassword .form-group.focus:after {
     opacity: 1;
     width: 100%;
-    background: #ED2553; }
+    background: #fff; }
   .page-template-login .form-group.focus .form-label, .page-template-login .form-group.filled .form-label, .page-template-forgotPassword .form-group.focus .form-label, .page-template-forgotPassword .form-group.filled .form-label {
     top: -7px;
     font-size: 10px;
-    color: #ED2553; }
+    color: #fff; }
 
 .dashboard-content {
   position: absolute;

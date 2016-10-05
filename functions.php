@@ -101,9 +101,9 @@ add_action( 'widgets_init', 'gamepress_widgets_init' );
  */
 function gamepress_scripts() {
 	
-	// wp_register_style( 'google-material-icons', 'https://fonts.googleapis.com/icon?family=Material+Icons');
+	wp_register_style( 'font-awesome', get_template_directory_uri() . '/css/font-awesome-4.6.3/css/font-awesome.css');
 
-	// wp_enqueue_style( 'google-material-icons' );
+	wp_enqueue_style( 'font-awesome' );
 
 	wp_register_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Maven+Pro:400,500');
 
