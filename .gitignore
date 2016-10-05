@@ -1,8 +1,13 @@
 # Gulp, NPM, Bower
+<<<<<<< HEAD
 /node_modules
 /.tmp
 /.sass-cache
 /bower_components
 gulpfile.js
+=======
+
+
+>>>>>>> 609b141fe721fa30aa53b9a2df6f0be9fc7a9c52
 # Mac stuff
 /.DS_Store
