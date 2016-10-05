@@ -248,13 +248,8 @@ th {
 
 @font-face {
   font-family: 'Glyphicons Halflings';
-<<<<<<< HEAD
   src: url("scss/bootstrap/glyphicons-halflings-regular.eot");
   src: url("scss/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("scss/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("scss/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("scss/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("scss/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
-=======
-  src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot");
-  src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
->>>>>>> 76d474aa6fad306ed657a7e46ee7f6a7bf65ada6
 
 .glyphicon {
   position: relative;
@@ -5828,7 +5823,6 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
-<<<<<<< HEAD
 
 .page-template-dashboard {
   overflow: hidden; }
@@ -6200,5 +6194,3 @@ aside > ul {
     margin: 1rem;
     height: 500px;
     background-color: white; }
-=======
->>>>>>> 76d474aa6fad306ed657a7e46ee7f6a7bf65ada6

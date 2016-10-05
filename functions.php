@@ -100,7 +100,6 @@ add_action( 'widgets_init', 'gamepress_widgets_init' );
  * Enqueue scripts and styles.
  */
 function gamepress_scripts() {
-<<<<<<< HEAD
 	
 	// wp_register_style( 'google-material-icons', 'https://fonts.googleapis.com/icon?family=Material+Icons');
 
@@ -110,17 +109,12 @@ function gamepress_scripts() {
 
 	wp_enqueue_style('google-fonts');
 
-=======
->>>>>>> 76d474aa6fad306ed657a7e46ee7f6a7bf65ada6
 	wp_enqueue_style( 'gamepress-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'gamepress-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
-<<<<<<< HEAD
 	wp_enqueue_script( 'gamepress-login', get_template_directory_uri() . '/js/login.js', array('jquery'), '20141004', true );
 
-=======
->>>>>>> 76d474aa6fad306ed657a7e46ee7f6a7bf65ada6
 	wp_enqueue_script( 'gamepress-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

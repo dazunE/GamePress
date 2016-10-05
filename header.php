@@ -19,7 +19,6 @@
 
 <body <?php body_class(); ?>>
 <nav class="navbar navbar-light bg-faded">
-<<<<<<< HEAD
 	<a class="navbar-brand" href="#">
 	<svg width="68px" height="44px" viewBox="22 51 170 142" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 	    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
@@ -53,35 +52,5 @@
 		<li><a href=""><span><i class="glyphicon glyphicon-star"></i></span></a></li>
 		<li><a href=""><span><i class="glyphicon glyphicon-th-large"></i></span></a></li>
 		<li><a href=""><span><i class="glyphicon glyphicon-king"></i></span></a></li>
-=======
-	<a class="navbar-brand" href="#">{4:Navbar}</a>
-	<ul class="nav navbar-nav">
-		<li class="nav-item active">
-			<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="#">Home</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="#">Home</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="#">Home</a>
-		</li>
-	</ul>
-	<form class="form-inline navbar-form pull-right">
-		<input class="form-control" type="text" placeholder="Search">
-		<button class="btn btn-success-outline" type="submit">Search</button>
-	</form>
-</nav>
-<aside class="main-navigation">
-	<ul>
-		<li><a href=""><span><i class="fa"></i>Nav Item</span></a></li>
-		<li><a href=""><span><i class="fa"></i>Nav Item</span></a></li>
-		<li><a href=""><span><i class="fa"></i>Nav Item</span></a></li>
-		<li><a href=""><span><i class="fa"></i>Nav Item</span></a></li>
-		<li><a href=""><span><i class="fa"></i>Nav Item</span></a></li>
-		<li><a href=""><span><i class="fa"></i>Nav Item</span></a></li>
->>>>>>> 76d474aa6fad306ed657a7e46ee7f6a7bf65ada6
 	</ul>
 </aside>
