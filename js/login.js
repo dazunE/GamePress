@@ -35,3 +35,6 @@
 jQuery('.close').click(function(){
   jQuery(this).closest('.register-form').toggleClass('open');
 });
+jQuery('.forgot-password').click(function(){
+  jQuery('.register-form').toggleClass('open');
+});

@@ -14,7 +14,9 @@
     "gulp-watch": "~4.2.4",
     "jshint-stylish": "~2.0.1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "chart.js": "^2.3.0"
+  },
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -15,8 +15,22 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<div class="dashboard-content container-fluid">
 				<div class="row">
-					<div class="col-md-8"><div class="col-md-12"><h1>Insights</h1></div></div>
-					<div class="col-md-4"><div class="col-md-12"></div></div>
+					<div class="col-md-6"><div class="col-md-12"><h1>Insights</h1></div></div>
+					<div class="col-md-6">
+						<div class="col-md-12">
+							<h1>
+								<div class="dropdown">
+									  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">This Month
+									  <span class="caret"></span></button>
+									  <ul class="dropdown-menu">
+									    <li><a href="#">This Month</a></li>
+									    <li><a href="#">This Week</a></li>
+									    <li><a href="#">This Day</a></li>
+									  </ul>
+								</div>
+							</h1>
+						</div>
+					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-4 insights-card">
@@ -57,12 +71,43 @@ get_header(); ?>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-6 card">
-						<div></div>
+					<div class="col-md-6">
+						<div class="col-md-12">
+							<h1>
+								<div class="dropdown">
+									  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">This Month
+									  <span class="caret"></span></button>
+									  <ul class="dropdown-menu">
+									    <li><a href="#">This Month</a></li>
+									    <li><a href="#">This Week</a></li>
+									    <li><a href="#">This Day</a></li>
+									  </ul>
+								</div>
+							</h1>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="col-md-12">
+							<h1>
+								<div class="dropdown">
+									  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">This Month
+									  <span class="caret"></span></button>
+									  <ul class="dropdown-menu">
+									    <li><a href="#">This Month</a></li>
+									    <li><a href="#">This Week</a></li>
+									    <li><a href="#">This Day</a></li>
+									  </ul>
+								</div>
+							</h1>
+						</div>
 					</div>
 					<div class="col-md-6 card">
 						<div></div>
 					</div>
+					<div class="col-md-6 card">
+						<div><canvas id="myChart"></canvas></div>
+					</div>
+					
 				</div>
 			</div>
 		</main><!-- #main -->

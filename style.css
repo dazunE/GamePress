@@ -5846,6 +5846,12 @@ button.close {
       color: #337ab7; }
     .page-template-dashboard nav.navbar .navbar-form input {
       margin: auto; }
+  .page-template-dashboard .card canvas {
+    height: 90% !important;
+    width: 90% !important;
+    margin: auto; }
+  .page-template-dashboard .dropdown button {
+    float: right; }
 
 body {
   background-color: #efefef;
@@ -6128,7 +6134,8 @@ aside > ul {
     background: none;
     color: #fff;
     width: 100%;
-    font-size: 18px; }
+    font-size: 18px;
+    box-shadow: none; }
   .page-template-login .form-group .form-control:focus, .page-template-login .form-group .form-control:active, .page-template-forgotPassword .form-group .form-control:focus, .page-template-forgotPassword .form-group .form-control:active {
     box-shadow: none;
     outline: none; }

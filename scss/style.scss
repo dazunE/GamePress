@@ -45,6 +45,14 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 			}
 		}
 	}
+	.card canvas {
+		height: 90% !important;
+		width: 90% !important;
+		margin: auto;
+	}
+	.dropdown button {
+		float: right;
+	}
 }
 
 body {
@@ -389,6 +397,7 @@ aside > ul {
   color: #fff;
   width: 100%;
   font-size: 18px;
+  box-shadow: none;
 }
 .form-group .form-control:focus, .form-group .form-control:active {
   box-shadow: none;

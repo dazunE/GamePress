@@ -45,12 +45,33 @@
 	</ul>
 </nav>
 <aside class="main-navigation">
-	<ul>
-		<li><a href=""><span><i class="glyphicon glyphicon-home"></i></span></a></li>
-		<li><a href=""><span><i class="glyphicon glyphicon-book"></i></span></a></li>
-		<li><a href=""><span><i class="glyphicon glyphicon-tower"></i></span></a></li>
-		<li><a href=""><span><i class="glyphicon glyphicon-star"></i></span></a></li>
-		<li><a href=""><span><i class="glyphicon glyphicon-th-large"></i></span></a></li>
-		<li><a href=""><span><i class="glyphicon glyphicon-king"></i></span></a></li>
-	</ul>
+	
+	<?php
+
+
+	   /**
+		* Displays a navigation menu
+		* @param array $args Arguments
+		*/
+		$args = array(
+			'theme_location' => 'primary',
+			'menu' => '',
+			'container' => false,
+			'echo' => true,
+			'fallback_cb' => 'wp_page_menu',
+			'before' => '',
+			'after' => '',
+			'link_before' => '',
+			'link_after' => '',
+			'items_wrap' => '<ul id = "%1$s" class = "%2$s">%3$s</ul>',
+			'depth' => 0,
+			'walker' => new wp_bootstrap_navwalker()
+		);
+	
+		wp_nav_menu( $args );
+
+	?>
+	
 </aside>
+
+

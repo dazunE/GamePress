@@ -48,7 +48,7 @@
       <input type="password" class="form-control"/>
     </div>
     <button class="btn"><a href= <?php echo get_template_directory_uri() . '/dashboard' ?> >Log In</a></button>
-    <a class="forgot-password" href="">Forgot Password ?</a>
+    <a class="forgot-password">Forgot Password ?</a>
   </div>
   <form class="register-form"><i class="close fa fa-arrow-right" aria-hidden="true"></i>
     <h2>Forgot Password</h2>
@@ -70,7 +70,7 @@
         <input type="password" class="form-control"/>
       </div> -->
 
-      <button class="btn">Send</button>
+      <button class="btn">Create New Password</button>
     </div>
   </form>
 </div>
