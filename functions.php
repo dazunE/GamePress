@@ -112,6 +112,8 @@ function gamepress_scripts() {
 
 	wp_enqueue_style( 'gamepress-style', get_stylesheet_uri() );
 
+	wp_enqueue_script('bootstrap' , get_template_directory_uri() . '/bower_components/bootstrap-sass/assets/javascripts/bootstrap.js', array('jquery'), '20161007', true);
+
 	wp_enqueue_script( 'gamepress-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'gamepress-login', get_template_directory_uri() . '/js/login.js', array('jquery'), '20141004', true );

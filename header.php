@@ -31,16 +31,23 @@
 	</svg>
 	</a>
 	<form class="form-inline navbar-form">
-		<i class="glyphicon glyphicon-search" aria-hidden="true"></i>
+		<span class="fa fa-search" aria-hidden="true"></span>
 		<input class="form-control" type="text" placeholder="Search">
 		<!-- <button class="btn btn-success-outline" type="submit">Search</button> -->
 	</form>
 	<ul class="nav navbar-nav pull-right">
 		<li class="nav-item active">
-			<a class="nav-link" href="#"><span class="glyphicon glyphicon-bell"></span></a>
+			<a class="nav-link" href="#"><span class="fa fa-bell"></span></a>
 		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="#"><span class="glyphicon glyphicon-user"></span></a>
+		<li class="nav-item dropdown">
+
+		  	<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"><span class="fa fa-user"></span><span class="caret"></span></a>
+
+		  	<ul class="dropdown-menu">
+			    <li><a href="#">Name</a></li>
+			    <li><a href="#">Age</a></li>
+			    <li><a href="#">Address</a></li>
+		  	</ul>
 		</li>
 	</ul>
 </nav>

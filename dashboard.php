@@ -42,7 +42,9 @@ get_header(); ?>
 									<h3>Millions</h3>
 								</div>
 							</div>
-							<div class="col-md-6"></div>
+							<div class="col-md-6">
+								<img src=<?php echo get_template_directory_uri() . '/img/profits.svg' ?>>
+							</div>
 						</div>
 					</div>
 					<div class="col-md-4 insights-card">
@@ -54,7 +56,9 @@ get_header(); ?>
 									<h3>Millions</h3>
 								</div>
 							</div>
-							<div class="col-md-6"></div>
+							<div class="col-md-6">
+								<img src=<?php echo get_template_directory_uri() . '/img/profits.svg' ?>>
+							</div>
 						</div>
 					</div>
 					<div class="col-md-4 insights-card">
@@ -66,7 +70,9 @@ get_header(); ?>
 									<h3>Millions</h3>
 								</div>
 							</div>
-							<div class="col-md-6"></div>
+							<div class="col-md-6">
+								<img src=<?php echo get_template_directory_uri() . '/img/loss.svg' ?>>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -102,10 +108,52 @@ get_header(); ?>
 						</div>
 					</div>
 					<div class="col-md-6 card">
-						<div></div>
+						<div class="card-content">
+							<div class="row header">
+								<div class="col-md-4">June 2016</div>
+								<div class="col-md-8">260</div>
+							</div>
+							<div class="row">
+								<div class="col-md-4">Cersi Lanister</div>
+								<div class="col-md-8">
+									<div class="row col-md-8 bar-wrapper">
+										<div class="col-md-11 bar" style="background-color: #ff901f; width: 50%;"></div>
+									</div>
+									<div class="col-md-4">90%</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-4">Ricky Garcia</div>
+								<div class="col-md-8">
+									<div class="row col-md-8 bar-wrapper">
+										<div class="col-md-11 bar" style="background-color: #fae813; width: 70%;"></div>
+									</div>
+									<div class="col-md-4">75%</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-4">Steve Kennedy</div>
+								<div class="col-md-8">
+									<div class="row col-md-8 bar-wrapper">
+										<div class="col-md-11 bar" style="background-color: #08ca20; width: 80%;"></div>
+									</div>
+									<div class="col-md-4">65%</div>	
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-4">Bradley Cross</div>
+								<div class="col-md-8">
+									<div class="row col-md-8 bar-wrapper">
+										<div class="col-md-11 bar" style="background-color: #4575f6; width: 40%;"></div>
+									</div>
+									<div class="col-md-4">50%</div>	
+								</div>
+							</div>
+						</div>
+
 					</div>
 					<div class="col-md-6 card">
-						<div><canvas id="myChart"></canvas></div>
+						<div class="card-content"><canvas id="myChart"></canvas></div>
 					</div>
 					
 				</div>
