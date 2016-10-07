@@ -17,7 +17,7 @@
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> data-homeurl="<?php echo get_home_url();?>">
 <nav class="navbar navbar-light bg-faded">
 	<a class="navbar-brand" href="#">
 	<svg width="68px" height="44px" viewBox="22 51 170 142" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

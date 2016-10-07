@@ -35,3 +35,7 @@ var myChart = new Chart(ctx, {
         }
     }
 });
+
+function goDashboard(){
+    window.location = document.getElementsByTagName('body')[0].attributes['data-homeurl'] + '/dashboard';
+}

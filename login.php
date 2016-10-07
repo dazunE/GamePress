@@ -21,7 +21,7 @@
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> data-homeurl="<?php echo get_template_directory_uri() ?>">
 	
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
@@ -47,7 +47,7 @@
       <lable class="form-label">Password</lable>
       <input type="password" class="form-control"/>
     </div>
-    <button class="btn"><a href= <?php echo get_template_directory_uri() . '/dashboard' ?> >Log In</a></button>
+    <button class="btn" onclick="goDashboard()">Log In</button>
     <a class="forgot-password">Forgot Password ?</a>
   </div>
   <form class="register-form"><i class="close fa fa-arrow-right" aria-hidden="true"></i>
