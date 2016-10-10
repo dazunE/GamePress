@@ -14,7 +14,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 @import "bootstrap";
 
 //Theme Styles
-@import "shame";
+@import "mixings";
 
 .page-template-dashboard {
 	overflow: hidden;
@@ -257,14 +257,8 @@ aside > ul {
     				font-size: 2rem;
 				    padding: 2rem;
 				    text-align: center;
-				    background: -moz-linear-gradient(45deg, rgba(51, 255, 153, 0.94) 0%, rgba(0,128,128,1) 100%) !important; /* ff3.6+ */
-					background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(51,255,153,0.94)), color-stop(100%, rgba(0,128,128,1))) !important; /* safari4+,chrome */
-					background: -webkit-linear-gradient(45deg, rgba(51, 255, 153, 0.94) 0%, rgba(0,128,128,1) 100%) !important; /* safari5.1+,chrome10+ */
-					background: -o-linear-gradient(45deg, rgba(51, 255, 153, 0.94) 0%, rgba(0,128,128,1) 100%) !important; /* opera 11.10+ */
-					background: -ms-linear-gradient(45deg, rgba(51, 255, 153, 0.94) 0%, rgba(0,128,128,1) 100%) !important; /* ie10+ */
-					background: linear-gradient(45deg, rgba(51, 255, 153, 0.94) 0%, rgba(0,128,128,1) 100%) !important; /* w3c */
-					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008080', endColorstr='#33FF99',GradientType=1 ); /* ie6-9 */
-					div {
+				    @include linearGradient(rgba(51, 255, 153, 0.7) , #039898)
+				   div {
 						height: inherit;
 						background: none;
 						padding: 2rem;
