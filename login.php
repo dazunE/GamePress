@@ -21,6 +21,7 @@
 <?php wp_head(); ?>
 </head>
 
+<<<<<<< Updated upstream
 <body <?php body_class(); ?>>
   
   <div id="primary" class="content-area">
@@ -80,6 +81,11 @@
       
     </main><!-- #main -->
   </div><!-- #primary -->
+=======
+<body <?php body_class(); ?> data-homeurl="<?php echo get_template_directory_uri() ?>">
+	
+
+>>>>>>> Stashed changes
 
 <?php get_footer(); ?> 
 
