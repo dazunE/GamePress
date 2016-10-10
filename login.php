@@ -20,12 +20,8 @@
 
 <?php wp_head(); ?>
 </head>
-<<<<<<< Updated upstream
 
 <body <?php body_class(); ?> data-homeurl="<?php echo get_template_directory_uri() ?>">
-=======
-<body <?php body_class(); ?>>
->>>>>>> Stashed changes
 	
 	<div id="primary" class="content-area">
 
@@ -44,7 +40,6 @@
 
 					<div class="col-md-6 col-xs-12 col-sm-12 login-wrapper">
 							<div class="panel">
-<<<<<<< Updated upstream
   <h2>LOGIN</h2>
   <div class="formset">
     <div class="form-group">
@@ -83,7 +78,6 @@
   </form>
 </div>
 						<!-- </div> -->
-=======
                   <h2>LOGIN</h2>
                   <div class="formset">
                     <div class="form-group">
@@ -108,7 +102,6 @@
                     </div>
                   </form>
                 </div>
->>>>>>> Stashed changes
 					</div>
 
 				</div>
