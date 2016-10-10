@@ -41,7 +41,11 @@
 		</li>
 		<li class="nav-item dropdown">
 
-		  	<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"><span class="fa fa-user"></span><span class="caret"></span></a>
+		  	<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+		  		<!-- <span class="fa fa-user"></span> -->
+		  		<img src=<?php echo get_template_directory_uri() . '/img/user.png'; ?> >
+		  		<span class="caret"></span>
+		  	</a>
 
 		  	<ul class="dropdown-menu">
 			    <li><a href="#">Name</a></li>

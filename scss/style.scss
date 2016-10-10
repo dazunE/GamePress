@@ -16,6 +16,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 //Theme Styles
 @import "shame";
 
+
+.card-shadow {
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1px rgba(0,0,0,.12);
+}
+
 .page-template-dashboard {
 	overflow: hidden;
 	.nav.navbar-nav {
@@ -53,11 +58,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 			}
 		}
 	}
-	.card canvas {
-		height: 90% !important;
-		width: 90% !important;
-		margin: auto;
-	}
 	.dropdown button {
 		// float: right;
 	}
@@ -77,6 +77,10 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 			color: #337ab7;
 		}
 		.insights-card {
+
+			.insights-card-content {
+				@extend .card-shadow;
+			}
 			div {
 				margin: 1rem;
 				height: 250px;
@@ -125,6 +129,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 				font-weight: 500;
 			}
 			.card-content {
+				
+				@extend .card-shadow;
+
 				margin: 1rem;
 				height: 400px;
 				padding: 2rem;
@@ -146,14 +153,23 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	    			margin-top: 5px;
 	    			margin-bottom: 5px;
 	    		}
+	    		canvas {
+					height: 90% !important;
+					width: 90% !important;
+					margin: auto;
+				}
 			}
 		}
 
 		.dropdown {
 			float: right;
 			.btn-primary {
+
+				@extend .card-shadow;
+
 				background-color: #ffffff;
-			    border-color: #337ab7;
+			    // border-color: #337ab7;
+			    border: none;
 			    border-bottom-left-radius: 15px;
 			    border-bottom-right-radius: 15px;
 			    border-top-left-radius: 15px;
@@ -314,12 +330,12 @@ aside > ul {
   bottom: 0;
   height: 450px;
 
-  background: -moz-linear-gradient(45deg, rgba(51,255,153,0.7) 0%, rgba(0,128,128,1) 100%) !important; /* ff3.6+ */
-					background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(51,255,153,0.7)), color-stop(100%, rgba(0,128,128,1))) !important; /* safari4+,chrome */
-					background: -webkit-linear-gradient(45deg, rgba(51,255,153,0.7) 0%, rgba(0,128,128,1) 100%) !important; /* safari5.1+,chrome10+ */
-					background: -o-linear-gradient(45deg, rgba(51,255,153,0.7) 0%, rgba(0,128,128,1) 100%) !important; /* opera 11.10+ */
-					background: -ms-linear-gradient(45deg, rgba(51,255,153,0.7) 0%, rgba(0,128,128,1) 100%) !important; /* ie10+ */
-					background: linear-gradient(45deg, rgba(51,255,153,0.7) 0%, rgba(0,128,128,1) 100%) !important; /* w3c */
+  background: -moz-linear-gradient(45deg, rgba(51,255,153,0.7) 0%, #6767ff 100%) !important; /* ff3.6+ */
+					background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(51,255,153,0.7)), color-stop(100%, #6767ff)) !important; /* safari4+,chrome */
+					background: -webkit-linear-gradient(45deg, rgba(51,255,153,0.7) 0%, #6767ff 100%) !important; /* safari5.1+,chrome10+ */
+					background: -o-linear-gradient(45deg, rgba(51,255,153,0.7) 0%, #6767ff 100%) !important; /* opera 11.10+ */
+					background: -ms-linear-gradient(45deg, rgba(51,255,153,0.7) 0%, #6767ff 100%) !important; /* ie10+ */
+					background: linear-gradient(45deg, rgba(51,255,153,0.7) 0%, #6767ff 100%) !important; /* w3c */
 					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008080', endColorstr='#33FF99',GradientType=1 ); /* ie6-9 */
 }
 .panel h2 {

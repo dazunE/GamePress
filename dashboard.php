@@ -34,7 +34,7 @@ get_header(); ?>
 				</div>
 				<div class="row">
 					<div class="col-md-4 insights-card">
-						<div class="row">
+						<div class="row insights-card-content">
 							<div class="col-md-6">
 								<div class="row">
 									<h3>Sales</h3>
@@ -48,7 +48,7 @@ get_header(); ?>
 						</div>
 					</div>
 					<div class="col-md-4 insights-card">
-						<div class="row">
+						<div class="row insights-card-content">
 							<div class="col-md-6">
 								<div class="row">
 									<h3>Smart Phones</h3>
@@ -62,7 +62,7 @@ get_header(); ?>
 						</div>
 					</div>
 					<div class="col-md-4 insights-card">
-						<div class="row">
+						<div class="row insights-card-content">
 							<div class="col-md-6">
 								<div class="row">
 									<h3>Digital Copiers</h3>

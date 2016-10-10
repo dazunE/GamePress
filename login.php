@@ -30,7 +30,7 @@
 				<div class="row">
 					<div class="col-md-6 hidden-xs hidden-sm">
 						<div class="row">
-							<img src=<?php echo get_template_directory_uri() . '/img/Logo.svg'; ?>  alt="Kiwi standing on oval">
+							<img src=<?php echo get_template_directory_uri() . '/img/Logo.svg'; ?>  alt="logo">
 							<h1>A goal is a dream with a deadline</h1>
 						</div>
 					</div>
