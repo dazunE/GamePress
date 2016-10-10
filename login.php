@@ -20,23 +20,31 @@
 
 <?php wp_head(); ?>
 </head>
+<<<<<<< Updated upstream
 
 <body <?php body_class(); ?> data-homeurl="<?php echo get_template_directory_uri() ?>">
+=======
+<body <?php body_class(); ?>>
+>>>>>>> Stashed changes
 	
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
 
-			<div class="container-fluid login">
+		<main id="main" class="site-login" role="main">
+
 				<div class="row">
+
 					<div class="col-md-6 hidden-xs hidden-sm">
+
 						<div class="row">
 							<img src=<?php echo get_template_directory_uri() . '/img/Logo.svg'; ?>  alt="logo">
 							<h1>A goal is a dream with a deadline</h1>
 						</div>
+
 					</div>
+
 					<div class="col-md-6 col-xs-12 col-sm-12 login-wrapper">
-						<!-- <div class="row"> -->
 							<div class="panel">
+<<<<<<< Updated upstream
   <h2>LOGIN</h2>
   <div class="formset">
     <div class="form-group">
@@ -75,9 +83,35 @@
   </form>
 </div>
 						<!-- </div> -->
+=======
+                  <h2>LOGIN</h2>
+                  <div class="formset">
+                    <div class="form-group">
+                      <lable class="form-label">User Name</lable>
+                      <input type="text" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                      <lable class="form-label">Password</lable>
+                      <input type="password" class="form-control"/>
+                    </div>
+                    <button class="btn"><a href= <?php echo get_template_directory_uri() . '/dashboard' ?> >Log In</a></button>
+                    <a class="forgot-password" href="">Forgot Password ?</a>
+                  </div>
+                  <form class="register-form"><i class="close fa fa-arrow-right" aria-hidden="true"></i>
+                    <h2>Forgot Password</h2>
+                    <div class="formset">
+                      <div class="form-group">
+                        <lable class="form-label">Email</lable>
+                        <input type="text" class="form-control"/>
+                      </div>
+                      <button class="btn">Send</button>
+                    </div>
+                  </form>
+                </div>
+>>>>>>> Stashed changes
 					</div>
+
 				</div>
-			</div>
 			
 		</main><!-- #main -->
 	</div><!-- #primary -->
