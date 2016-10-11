@@ -36,22 +36,37 @@
 		<!-- <button class="btn btn-success-outline" type="submit">Search</button> -->
 	</form>
 	<ul class="nav navbar-nav pull-right">
-		<li class="nav-item active">
-			<a class="nav-link" href="#"><span class="fa fa-bell"></span></a>
+		<li class="nav-item active dropdown">
+			<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"><span class="fa fa-bell"></span></a>
+
+			<ul class="dropdown-menu">
+			    <li class="notification">
+			    	<div>Bello!</div>
+			    	<div>Tank yu</div>
+			    	<div>Poopaye</div>
+			    </li>
+		  	</ul>
 		</li>
 		<li class="nav-item dropdown">
 
 		  	<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
-		  		<!-- <span class="fa fa-user"></span> -->
+		  		
 		  		<img src=<?php echo get_template_directory_uri() . '/img/user.png'; ?> >
 		  		<span class="caret"></span>
 		  	</a>
 
 		  	<ul class="dropdown-menu">
-			    <li><a href="#">Name</a></li>
-			    <li><a href="#">Age</a></li>
-			    <li><a href="#">Address</a></li>
-			    <li>Ado</li>
+			    <li class="profile-details">
+			    	<div class="profile-img">
+			    		<img src=<?php echo get_template_directory_uri() . '/img/user.png'; ?> >
+			    	</div>
+			    	<div class="profile-data">
+			    		<div>Jerry</div>
+			    		<div>Spiky Hair</div>
+			    		<div>Slim Body</div>
+			    	</div>
+			    
+			    </li>
 		  	</ul>
 		</li>
 	</ul>

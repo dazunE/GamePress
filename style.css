@@ -5827,6 +5827,13 @@ button.close {
 .card-shadow, .page-template-dashboard .nav.navbar-nav .dropdown .dropdown-menu, .page-template-dashboard .dashboard-content .insights-card .insights-card-content, .page-template-dashboard .dashboard-content .card .card-content, .page-template-dashboard .dashboard-content .dropdown .dropdown-menu, .page-template-dashboard .dashboard-content .dropdown .btn-primary {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12); }
 
+.dropdown-list-item, .page-template-dashboard .nav.navbar-nav .dropdown .dropdown-menu .profile-details .profile-img img, .page-template-dashboard .nav.navbar-nav .dropdown .dropdown-menu .profile-details .profile-data div, .page-template-dashboard .nav.navbar-nav .dropdown .dropdown-menu .notification div {
+  border-top: 1px solid #ccc;
+  border-top-color: rgba(0, 0, 0, 0.2); }
+
+.dropdown-list-item:hover, .page-template-dashboard .nav.navbar-nav .dropdown .dropdown-menu .profile-details .profile-img img:hover, .page-template-dashboard .nav.navbar-nav .dropdown .dropdown-menu .profile-details .profile-data div:hover, .page-template-dashboard .nav.navbar-nav .dropdown .dropdown-menu .notification div:hover {
+  background: #eee; }
+
 .page-template-dashboard {
   overflow: hidden; }
   .page-template-dashboard .nav.navbar-nav {
@@ -5835,7 +5842,31 @@ button.close {
     text-align: center;
     font-size: 2rem; }
     .page-template-dashboard .nav.navbar-nav .dropdown .dropdown-menu {
-      left: -62px !important; }
+      background: #f5f5f5;
+      left: -240px !important;
+      padding: 0; }
+      .page-template-dashboard .nav.navbar-nav .dropdown .dropdown-menu .profile-details {
+        display: inline-flex;
+        width: 100%; }
+        .page-template-dashboard .nav.navbar-nav .dropdown .dropdown-menu .profile-details .profile-img img {
+          width: 100px;
+          padding: 10px; }
+        .page-template-dashboard .nav.navbar-nav .dropdown .dropdown-menu .profile-details .profile-data {
+          width: 230px;
+          font-size: 20px;
+          color: grey;
+          font-weight: 500; }
+          .page-template-dashboard .nav.navbar-nav .dropdown .dropdown-menu .profile-details .profile-data div {
+            line-height: 40px;
+            padding-left: 1rem; }
+      .page-template-dashboard .nav.navbar-nav .dropdown .dropdown-menu .notification {
+        width: 330px;
+        font-size: 20px;
+        color: grey;
+        font-weight: 500; }
+        .page-template-dashboard .nav.navbar-nav .dropdown .dropdown-menu .notification div {
+          line-height: 40px;
+          padding-left: 1rem; }
     .page-template-dashboard .nav.navbar-nav .nav-link {
       padding: 0;
       line-height: 100px;
@@ -5843,7 +5874,7 @@ button.close {
       width: 100px; }
       .page-template-dashboard .nav.navbar-nav .nav-link img {
         border: 2px solid #337ab7;
-        width: 60px;
+        width: 50px;
         padding: 5px;
         border-radius: 50%; }
   .page-template-dashboard .fa {
@@ -5861,7 +5892,9 @@ button.close {
       margin: auto; }
     .page-template-dashboard nav.navbar .navbar-form .form-control {
       font-size: 20px;
-      border-radius: 2px; }
+      border-radius: 2px;
+      border-radius: 0;
+      box-shadow: none; }
   .page-template-dashboard td, .page-template-dashboard th {
     padding-left: 10px;
     height: 50px;
@@ -5875,9 +5908,17 @@ button.close {
     overflow-y: auto; }
     .page-template-dashboard .dashboard-content h1 {
       color: #337ab7; }
+    .page-template-dashboard .dashboard-content .section {
+      margin: 1rem 0; }
+      .page-template-dashboard .dashboard-content .section .section-header {
+        font-size: 36px;
+        font-weight: 500;
+        color: #337ab7; }
+    .page-template-dashboard .dashboard-content .insights-card .insights-card-content div:nth-child(2) {
+      background-color: #4575f6; }
     .page-template-dashboard .dashboard-content .insights-card div {
-      margin: 1rem;
-      height: 250px;
+      margin: 0rem;
+      height: 100%;
       background-color: white; }
     .page-template-dashboard .dashboard-content .insights-card div.row div {
       margin: 0px;
@@ -5891,11 +5932,8 @@ button.close {
           font-weight: 700; }
     .page-template-dashboard .dashboard-content .insights-card img {
       margin: 4rem; }
-    .page-template-dashboard .dashboard-content .insights-card:nth-child(1) div.row div:nth-child(2), .page-template-dashboard .dashboard-content .insights-card:nth-child(2) div.row div:nth-child(2), .page-template-dashboard .dashboard-content .insights-card:nth-child(3) div.row div:nth-child(2) {
-      background-color: #4575f6; }
     .page-template-dashboard .dashboard-content .card div {
-      padding-left: 15px;
-      background-color: white; }
+      padding-left: 15px; }
       .page-template-dashboard .dashboard-content .card div table {
         width: 100%;
         color: #337ab7;
@@ -5903,11 +5941,12 @@ button.close {
     .page-template-dashboard .dashboard-content .card .header {
       font-weight: 500; }
     .page-template-dashboard .dashboard-content .card .card-content {
-      margin: 1rem;
-      height: 400px;
+      margin-top: 5rem;
+      min-height: 400px;
       padding: 2rem;
       font-size: 20px;
-      color: #337ab7; }
+      color: #337ab7;
+      background-color: white; }
       .page-template-dashboard .dashboard-content .card .card-content .bar-wrapper {
         line-height: 40px; }
         .page-template-dashboard .dashboard-content .card .card-content .bar-wrapper .bar {
@@ -5922,12 +5961,16 @@ button.close {
         margin-bottom: 5px; }
       .page-template-dashboard .dashboard-content .card .card-content canvas {
         height: 90% !important;
-        width: 90% !important;
+        width: 70% !important;
         margin: auto; }
     .page-template-dashboard .dashboard-content .dropdown {
-      float: right; }
+      float: right;
+      margin: 1rem 0; }
       .page-template-dashboard .dashboard-content .dropdown .dropdown-menu {
-        left: -52px !important; }
+        left: -52px !important;
+        background: #f5f5f5; }
+        .page-template-dashboard .dashboard-content .dropdown .dropdown-menu li a:hover {
+          background: #eee; }
       .page-template-dashboard .dashboard-content .dropdown .btn-primary {
         background-color: #ffffff;
         border: none;

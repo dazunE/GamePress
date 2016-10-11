@@ -20,6 +20,13 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 .card-shadow {
 	box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1px rgba(0,0,0,.12);
 }
+.dropdown-list-item {
+    border-top: 1px solid #ccc;
+    border-top-color: rgba(0,0,0,.2);
+}
+.dropdown-list-item:hover {
+	background: #eee;
+}
 
 .page-template-dashboard {
 	overflow: hidden;
@@ -30,8 +37,42 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	    font-size: 2rem;
 	    .dropdown {
 	    	.dropdown-menu {
-				left: -62px !important;
+	    		background: #f5f5f5;
+				left: -240px !important;
+				padding: 0;
 				@extend .card-shadow;
+				.profile-details {
+					display: inline-flex;
+					width: 100%;
+					.profile-img img{
+						@extend .dropdown-list-item;
+						width: 100px;
+    					padding: 10px;
+					}
+					.profile-data {
+						width: 230px;
+					    font-size: 20px;
+					    color: grey;
+					    font-weight: 500;
+    					// margin: 1rem;
+						div {
+							@extend .dropdown-list-item;
+							line-height: 40px;
+							padding-left: 1rem;
+						}
+					}
+				}
+				.notification {
+					width: 330px;
+					font-size: 20px;
+					color: grey;
+					font-weight: 500;
+					div{
+						@extend .dropdown-list-item;
+						line-height: 40px;
+						padding-left: 1rem;
+					}
+				}
 			}
 	    }
 	    .nav-link {
@@ -41,7 +82,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 		    width: 100px;
 		    img {
 		    	border: 2px solid #337ab7;
-			    width: 60px;
+			    width: 50px;
 			    padding: 5px;
 			    border-radius: 50%;
 		    }
@@ -67,6 +108,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 			.form-control {
 				font-size: 20px;
 				border-radius: 2px;
+				border-radius: 0;
+    			box-shadow: none;
 			}
 		}
 	}
@@ -75,7 +118,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	    height: 50px;
 	    border: 1px solid #d3dfff;
 	}
-		.dashboard-content {
+	.dashboard-content {
 		position: absolute;
 		top: 100px;
 		left: 100px;
@@ -85,14 +128,28 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 		h1 {
 			color: #337ab7;
 		}
+		// .section-header {
+			
+		// }
+		.section {
+			margin: 1rem 0;
+			.section-header {
+				font-size: 36px;
+				font-weight: 500;
+				color: #337ab7;
+			}
+		}
 		.insights-card {
 
 			.insights-card-content {
 				@extend .card-shadow;
+				div:nth-child(2) {
+					background-color: #4575f6;	
+				}
 			}
 			div {
-				margin: 1rem;
-				height: 250px;
+				margin: 0rem;
+				height: 100%;
 				background-color: white;	
 			}
 			div.row {
@@ -115,19 +172,18 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 			}
 		}
 
-		.insights-card:nth-child(1), .insights-card:nth-child(2), .insights-card:nth-child(3) {
-			div.row {
-				div:nth-child(2) {
-					background-color: #4575f6;
-				}
-			}
-		}
+		// .insights-card:nth-child(1), .insights-card:nth-child(2), .insights-card:nth-child(3) {
+		// 	div.row {
+		// 		div:nth-child(2) {
+					
+		// 		}
+		// 	}
+		// }
 
 		.card {
 			div {
 				padding-left: 15px;
-				background-color: white;
-				
+
 				table {
 					width: 100%;
 					color: #337ab7;
@@ -140,12 +196,13 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 			.card-content {
 				
 				@extend .card-shadow;
-
-				margin: 1rem;
-				height: 400px;
+				
+				margin-top: 5rem;
+				min-height: 400px;
 				padding: 2rem;
 				font-size: 20px;
 	    		color: #337ab7;
+	    		background-color: white;
 				.bar-wrapper {
 					
 	    			line-height: 40px;
@@ -164,7 +221,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	    		}
 	    		canvas {
 					height: 90% !important;
-					width: 90% !important;
+					width: 70% !important;
 					margin: auto;
 				}
 			}
@@ -172,9 +229,14 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 		.dropdown {
 			float: right;
+			margin: 1rem 0;
 			.dropdown-menu {
 				left: -52px !important;
+				background: #f5f5f5;
 				@extend .card-shadow;
+				li a:hover {
+					background: #eee;
+				}
 			}
 			.btn-primary {
 
