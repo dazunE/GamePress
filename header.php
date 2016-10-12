@@ -19,7 +19,7 @@
 
 <body <?php body_class(); ?> data-homeurl="<?php echo get_home_url();?>">
 <nav class="navbar navbar-light bg-faded">
-	<a class="navbar-brand" href="#">
+	<a class="navbar-brand" href="#" onclick="openNav()">
 	<svg width="68px" height="44px" viewBox="22 51 170 142" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 	    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
 	    <desc>Created with Sketch.</desc>
@@ -30,11 +30,14 @@
 	    </g>
 	</svg>
 	</a>
-	<form class="form-inline navbar-form">
+	<!-- <span class="fa fa-bars hidden-md hidden-lg" aria-hidden="true" onclick="openNav()"></span> -->
+	<form class="form-inline navbar-form hidden-xs">
+
 		<span class="fa fa-search" aria-hidden="true"></span>
 		<input class="form-control" type="text" placeholder="Search">
 		<!-- <button class="btn btn-success-outline" type="submit">Search</button> -->
 	</form>
+	<span class="hidden-sm hidden-md hidden-lg nav-span"></span>
 	<ul class="nav navbar-nav pull-right">
 		<li class="nav-item active dropdown">
 			<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"><span class="fa fa-bell"></span></a>
@@ -71,8 +74,8 @@
 		</li>
 	</ul>
 </nav>
-<aside class="main-navigation">
-	
+<aside class="main-navigation" id="sidenav">
+	<a href="javascript:void(0)" class="closebtn hidden-sm hidden-md hidden-lg" onclick="closeNav()">&times;</a>
 	<?php
 
 

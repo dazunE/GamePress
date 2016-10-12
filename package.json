@@ -1,5 +1,5 @@
 {
-  "name": "clear",
+  "name": "gamepress",
   "version": "1.0.0",
   "description": "Gamepress supported theme for 919gamification",
   "author": "Dasun Edirisinghe <dazunj4me@gmail.com>",
@@ -14,13 +14,7 @@
     "gulp-watch": "~4.2.4",
     "jshint-stylish": "~2.0.1"
   },
-  "dependencies": {
-<<<<<<< Updated upstream
-    "chart.js": "^2.3.0"
-=======
-    "browser-sync": "^2.7.13"
->>>>>>> Stashed changes
-  },
+  "dependencies": {},
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
